@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://Athenea-sanchez.github.io/dynamixel-ctrl-main_md/'
 locale = 'es-es'
 title = 'Documentación Dynamixel'
 
