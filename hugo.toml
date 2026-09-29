@@ -1,0 +1,7 @@
+baseURL = 'http://localhost:1313/'
+locale = 'es-es'
+title = 'Documentación Dynamixel'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/colinwilson/lotusdocs'
