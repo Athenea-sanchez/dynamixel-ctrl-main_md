@@ -1,25 +1,24 @@
 ---
-title: drivers/DriverAX/include/DynamixelManagerP1.h
-
+title: "DynamixelManagerP1.h"
+linkTitle: "DynamixelManagerP1.h"
+summary: "Header de la clase DynamixelManagerP1."
+description: "Header de la clase DynamixelManagerP1."
+weight: 10
 ---
 
-# drivers/DriverAX/include/DynamixelManagerP1.h
-
-
+# DynamixelManagerP1.h
 
 ## Classes
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[DynamixelManagerP1](Classes/classDynamixelManagerP1.md)**  |
+| Name | Description |
+| ---- | ----------- |
+| **[DynamixelManagerP1](Classes/classDynamixelManagerP1.md)** | Administrador de comunicación y protocolo para motores Dynamixel P1. |
 
-
-
+---
 
 ## Source code
 
 ```cpp
-
 #ifndef DYNAMIXEL_SDK_CONTROL_P1
 #define DYNAMIXEL_SDK_CONTROL_P1
 
@@ -47,9 +46,9 @@ class DynamixelManagerP1
         
         std::string get_port();
 
-        dynamixel::PortHandler*getPortHandler();
+        dynamixel::PortHandler* getPortHandler();
         
-        dynamixel::PacketHandler*getPacketHandler();
+        dynamixel::PacketHandler* getPacketHandler();
 
         // -------------------------->>  Conectividad  <<--------------------------
         int connect();
@@ -88,7 +87,8 @@ class DynamixelManagerP1
 #endif
 ```
 
-
 -------------------------------
+
+Updated on 2026-09-29 at 16:14:57 -0600
 
 Updated on 2026-09-29 at 16:14:57 -0600
