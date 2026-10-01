@@ -1,17 +1,18 @@
 ---
-title: DynamixelManager
-summary: Gestiona la comunicación con motores Dynamixel (protocolos 1.0). 
-
+title: "DynamixelManager"
+linkTitle: "DynamixelManager"
+summary: "Gestiona la comunicación con motores Dynamixel (protocolo 1.0)."
+description: "Gestiona la comunicación con motores Dynamixel (protocolo 1.0)."
+weight: 10
 ---
 
 # DynamixelManager
 
-
-
-Gestiona la comunicación con motores Dynamixel (protocolos 1.0).  [More...](#detailed-description)
-
+Gestiona la comunicación con motores Dynamixel (protocolos 1.0). [More...](#detailed-description)
 
 `#include <DynamixelManagerP1.h>`
+
+---
 
 ## Detailed Description
 
@@ -19,14 +20,14 @@ Gestiona la comunicación con motores Dynamixel (protocolos 1.0).  [More...](#de
 class DynamixelManager;
 ```
 
-Gestiona la comunicación con motores Dynamixel (protocolos 1.0). 
+Gestiona la comunicación con motores Dynamixel (protocolo 1.0).
 
-Proporciona métodos para inicializar puertos, enviar comandos y verificar estados.
+Proporciona métodos para inicializar puertos seriales, enviar comandos y verificar estados de comunicación en la red Dynamixel.
 
-
-
-* Modelos en los que ha funcionado: AX-12A AX-18A 
+**Modelos probados y compatibles:**
+* AX-12A
+* AX-18A
 
 -------------------------------
 
-Updated on 2026-09-29 at 16:14:57 -0600
+Updated on 2026-10-01 at 16:15:00 -0600
