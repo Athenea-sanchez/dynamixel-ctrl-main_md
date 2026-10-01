@@ -1,31 +1,28 @@
+
+   ---
+title: "DynamixelAXControl.h"
+linkTitle: "DynamixelAXControl.h"
+summary: "Header de la clase DynamixelAXControl."
+description: "Header de la clase DynamixelAXControl."
+weight: 10
 ---
-title: drivers/DriverAX/include/DynamixelAXControl.h
-
----
-
-# drivers/DriverAX/include/DynamixelAXControl.h
-
-
 
 ## Classes
 
-|                | Name           |
-| -------------- | -------------- |
-| class | **[DynamixelAXControl](Classes/classDynamixelAXControl.md)** <br>Controlador especializado para motores Dynamixel de la serie AX (AX-12A, AX-18F, etc.).  |
+| Name | Description |
+| ---- | ----------- |
+| **[DynamixelAXControl](Classes/classDynamixelAXControl.md)** | Controlador especializado para motores Dynamixel de la serie AX (AX-12A, AX-18F, etc.). |
 
-
-
+---
 
 ## Source code
 
 ```cpp
-
 #ifndef DYNAMIXEL_CONTROL
 #define DYNAMIXEL_CONTROL
 
 #include <string>
 #include "DynamixelManagerP1.h"
-
 
 class DynamixelAXControl{
     
@@ -107,9 +104,3 @@ class DynamixelAXControl{
         int nCcwlimit = 0;
 };
 #endif
-```
-
-
--------------------------------
-
-Updated on 2026-09-29 at 16:14:57 -0600
