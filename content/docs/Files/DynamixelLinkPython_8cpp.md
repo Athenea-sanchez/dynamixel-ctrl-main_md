@@ -1,27 +1,28 @@
 ---
-title: drivers/DriverAX/src/DynamixelLinkPython.cpp
-summary: Módulo Python para control de motores Dynamixel (vía pybind11). 
-
+title: "DynamixelLinkPython.cpp"
+linkTitle: "DynamixelLinkPython.cpp"
+summary: "Módulo Python para control de motores Dynamixel (vía pybind11)."
+description: "Módulo Python para control de motores Dynamixel (vía pybind11)."
+weight: 10
 ---
 
-# drivers/DriverAX/src/DynamixelLinkPython.cpp
+# DynamixelLinkPython.cpp
 
-Módulo Python para control de motores Dynamixel (vía pybind11).  [More...](#detailed-description)
+Módulo Python para control de motores Dynamixel (vía pybind11). [More...](#detailed-description)
 
 ## Functions
 
-|                | Name           |
-| -------------- | -------------- |
+| | Name |
+| --- | --- |
 | | **[PYBIND11_MODULE](Files/DynamixelLinkPython_8cpp.md#function-pybind11-module)**([DynamixelAXControl](Classes/classDynamixelAXControl.md) , m ) |
 
 ## Detailed Description
 
-Módulo Python para control de motores Dynamixel (vía pybind11). 
+Módulo Python para control de motores Dynamixel (vía pybind11).
 
-**Warning**: Para uso unicamente con protocolo 1.0. 
+**Warning**: Para uso unicamente con protocolo 1.0.
 
-Expone las clases [DynamixelAXControl](Classes/classDynamixelAXControl.md) a Python. 
-
+Expone las clases [DynamixelAXControl](Classes/classDynamixelAXControl.md) a Python.
 
 ## Functions Documentation
 
@@ -34,13 +35,9 @@ PYBIND11_MODULE(
 )
 ```
 
-
-
-
 ## Source code
 
 ```cpp
-
 #include <pybind11/pybind11.h>
 #include "DynamixelAXControl.h"
 #include "DynamixelManagerP1.h"
@@ -49,7 +46,7 @@ namespace py = pybind11;
 
 PYBIND11_MODULE(DynamixelAXControl,m){
     py::class_<DynamixelAXControl>(m , "DynamixelAXControl")
-        .def(py::init<DynamixelManagerP1* , int >())
+        .def(py::init<DynamixelManagerP1* , int>())
         .def("get_message",&DynamixelAXControl::get_message)
         .def("get_id",&DynamixelAXControl::get_id)
         .def("connect",&DynamixelAXControl::connect, py::arg("home")=false)
@@ -66,7 +63,6 @@ PYBIND11_MODULE(DynamixelAXControl,m){
         .def("isMoving",&DynamixelAXControl::isMoving);
 }
 ```
-
 
 -------------------------------
 
