@@ -1,7 +1,25 @@
 baseURL = 'https://Athenea-sanchez.github.io/dynamixel-ctrl-main_md/'
+languageCode = 'es-es'
 locale = 'es-es'
 title = 'Documentación Dynamixel'
+contentDir = 'content'
+enableEmoji = true
 
 [module]
   [[module.imports]]
-    path = 'github.com/colinwilson/lotusdocs'
+    path = "github.com/colinwilson/lotusdocs"
+    disable = false
+  [[module.imports]]
+    path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+    disable = false
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 1
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Permite renderizar HTML dentro de los archivos Markdown
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
