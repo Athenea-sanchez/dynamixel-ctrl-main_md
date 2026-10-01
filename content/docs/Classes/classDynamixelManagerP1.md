@@ -1,36 +1,39 @@
 ---
-title: DynamixelManagerP1
-
+title: "DynamixelManagerP1"
+linkTitle: "DynamixelManagerP1"
+summary: "Manejador principal de puerto serial y protocolo 1.0 para motores Dynamixel."
+description: "Manejador principal de puerto serial y protocolo 1.0 para motores Dynamixel."
+weight: 10
 ---
 
 # DynamixelManagerP1
 
-
-
-
+`#include <DynamixelManagerP1.h>`
 
 ## Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| | **[DynamixelManagerP1](Classes/classDynamixelManagerP1.md#function-dynamixelmanagerp1)**(const std::string & sPort, int nBaudrate)<br>Constructor principal para inicializar la conexión con los motores.  |
-| | **[~DynamixelManagerP1](Classes/classDynamixelManagerP1.md#function-~dynamixelmanagerp1)**()<br>Destructor: Libera recursos y cierra la conexión.  |
-| int | **[get_dxl_comm_result](Classes/classDynamixelManagerP1.md#function-get-dxl-comm-result)**()<br>Obtiene el resultado de la última operación de comunicación.  |
-| uint8_t | **[get_dxl_error](Classes/classDynamixelManagerP1.md#function-get-dxl-error)**()<br>Obtiene el último error reportado por un motor Dynamixel.  |
-| bool | **[isConnect](Classes/classDynamixelManagerP1.md#function-isconnect)**()<br>Verifica el estado de la conexión con el puerto serial.  |
-| int | **[get_baudrate](Classes/classDynamixelManagerP1.md#function-get-baudrate)**()<br>Da el valor de baudrate con el que se configuro el objeto.  |
-| std::string | **[get_port](Classes/classDynamixelManagerP1.md#function-get-port)**()<br>Proporciona el nombre del puerto que se utilizado por el objeto.  |
-| dynamixel::PortHandler * | **[getPortHandler](Classes/classDynamixelManagerP1.md#function-getporthandler)**()<br>Obtiene el manejador del puerto serial (para operaciones avanzadas).  |
-| dynamixel::PacketHandler * | **[getPacketHandler](Classes/classDynamixelManagerP1.md#function-getpackethandler)**()<br>Obtiene el manejador de paquetes (para comunicación low-level).  |
-| int | **[connect](Classes/classDynamixelManagerP1.md#function-connect)**()<br>Establece conexión con el puerto serial configurado en el constructor.  |
-| void | **[disconnect](Classes/classDynamixelManagerP1.md#function-disconnect)**()<br>Cierra la conexión serial y libera recursos.  |
-| bool | **[pingServo](Classes/classDynamixelManagerP1.md#function-pingservo)**(int idServo)<br>Verifica si un servo Dynamixel específico está conectado y respondiendo.  |
-| bool | **[write1byte](Classes/classDynamixelManagerP1.md#function-write1byte)**(int idServo, int address, int value)<br>Escribe 1 byte (8 bits) en la memoria del servo.  |
-| bool | **[write2byte](Classes/classDynamixelManagerP1.md#function-write2byte)**(int idServo, int address, int value)<br>Escribe 2 bytes (16 bits) en la memoria del servo.  |
-| bool | **[writeMultiple](Classes/classDynamixelManagerP1.md#function-writemultiple)**(const std::vector< uint8_t > & ids, uint16_t address, uint8_t data_length, const std::vector< std::vector< uint8_t > > & values)<br>Escribe 2 bytes (16 bits) en la memoria del servo.  |
-| int | **[read1byte](Classes/classDynamixelManagerP1.md#function-read1byte)**(int idServo, int address)<br>Lee 1 byte (8 bits) de la memoria del servo.  |
-| int | **[read2byte](Classes/classDynamixelManagerP1.md#function-read2byte)**(int idServo, int address)<br>Lee 2 bytes (16 bits) de la memoria del servo.  |
-| std::map< uint8_t, std::vector< uint8_t > > | **[readMultiple](Classes/classDynamixelManagerP1.md#function-readmultiple)**(const std::vector< uint8_t > & ids, uint16_t address, uint8_t data_length)<br>Escribe 2 bytes (16 bits) en la memoria del servo.  |
+| Name | Description |
+| ---- | ----------- |
+| **[DynamixelManagerP1](Classes/classDynamixelManagerP1.md#function-dynamixelmanagerp1)**(const std::string &sPort, int nBaudrate) | Constructor principal para inicializar la conexión con los motores. |
+| **[~DynamixelManagerP1](Classes/classDynamixelManagerP1.md#function-~dynamixelmanagerp1)**() | Destructor: Libera recursos y cierra la conexión. |
+| int **[get_dxl_comm_result](Classes/classDynamixelManagerP1.md#function-get-dxl-comm-result)**() | Obtiene el resultado de la última operación de comunicación. |
+| uint8_t **[get_dxl_error](Classes/classDynamixelManagerP1.md#function-get-dxl-error)**() | Obtiene el último error reportado por un motor Dynamixel. |
+| bool **[isConnect](Classes/classDynamixelManagerP1.md#function-isconnect)**() | Verifica el estado de la conexión con el puerto serial. |
+| int **[get_baudrate](Classes/classDynamixelManagerP1.md#function-get-baudrate)**() | Da el valor de baudrate con el que se configuró el objeto. |
+| std::string **[get_port](Classes/classDynamixelManagerP1.md#function-get-port)**() | Proporciona el nombre del puerto utilizado por el objeto. |
+| dynamixel::PortHandler * **[getPortHandler](Classes/classDynamixelManagerP1.md#function-getporthandler)**() | Obtiene el manejador del puerto serial (para operaciones avanzadas). |
+| dynamixel::PacketHandler * **[getPacketHandler](Classes/classDynamixelManagerP1.md#function-getpackethandler)**() | Obtiene el manejador de paquetes (para comunicación low-level). |
+| int **[connect](Classes/classDynamixelManagerP1.md#function-connect)**() | Establece conexión con el puerto serial configurado en el constructor. |
+| void **[disconnect](Classes/classDynamixelManagerP1.md#function-disconnect)**() | Cierra la conexión serial y libera recursos. |
+| bool **[pingServo](Classes/classDynamixelManagerP1.md#function-pingservo)**(int idServo) | Verifica si un servo Dynamixel específico está conectado y respondiendo. |
+| bool **[write1byte](Classes/classDynamixelManagerP1.md#function-write1byte)**(int idServo, int address, int value) | Escribe 1 byte (8 bits) en la memoria del servo. |
+| bool **[write2byte](Classes/classDynamixelManagerP1.md#function-write2byte)**(int idServo, int address, int value) | Escribe 2 bytes (16 bits) en la memoria del servo. |
+| bool **[writeMultiple](Classes/classDynamixelManagerP1.md#function-writemultiple)**(const std::vector<uint8_t> &ids, uint16_t address, uint8_t data_length, const std::vector<std::vector<uint8_t>> &values) | Escribe datos de forma sincrónica/múltiple en varios servos. |
+| int **[read1byte](Classes/classDynamixelManagerP1.md#function-read1byte)**(int idServo, int address) | Lee 1 byte (8 bits) de la memoria del servo. |
+| int **[read2byte](Classes/classDynamixelManagerP1.md#function-read2byte)**(int idServo, int address) | Lee 2 bytes (16 bits) de la memoria del servo. |
+| std::map<uint8_t, std::vector<uint8_t>> **[readMultiple](Classes/classDynamixelManagerP1.md#function-readmultiple)**(const std::vector<uint8_t> &ids, uint16_t address, uint8_t data_length) | Lee datos de múltiples servos simultáneamente. |
+
+---
 
 ## Public Functions Documentation
 
@@ -43,16 +46,18 @@ DynamixelManagerP1(
 )
 ```
 
-Constructor principal para inicializar la conexión con los motores. 
+Constructor principal para inicializar la conexión con los motores.
 
 Inicializa los manejadores de puerto y paquetes del SDK Dynamixel.
 
-* Configura el puerto serial pero NO lo abre (usar [connect()](Classes/classDynamixelManagerP1.md#function-connect) posteriormente). sPortNombre del puerto serial (ej: "/dev/ttyUSB0" en Linux, "COM3" en Windows). 
+**Parameters**:
+* **sPort**: Nombre del puerto serial (ej: `/dev/ttyUSB0` en Linux, `COM3` en Windows).
+* **nBaudrate**: Velocidad de comunicación en baudios (ej: 57600, 115200).
 
-nBaudrateVelocidad de comunicación en baudios (ej: 57600, 115200). 
+**Exceptions**:
+* **std::runtime_error**: Si falla la inicialización del puerto.
 
-std::runtime_errorSi falla la apertura del puerto. 
-
+**Note**: Configura el puerto serial pero NO lo abre directamente; se debe usar [connect()](Classes/classDynamixelManagerP1.md#function-connect) posteriormente.
 
 ### function ~DynamixelManagerP1
 
@@ -60,13 +65,11 @@ std::runtime_errorSi falla la apertura del puerto.
 ~DynamixelManagerP1()
 ```
 
-Destructor: Libera recursos y cierra la conexión. 
+Destructor: Libera recursos y cierra la conexión.
 
 Garantiza una desconexión segura:
-
 1. Cierra la conexión serial si está activa (llamando a [disconnect()](Classes/classDynamixelManagerP1.md#function-disconnect)).
-2. Libera la memoria de los manejadores del SDK. No lanza excepciones para evitar problemas en el flujo de destrucción. 
-
+2. Libera la memoria de los manejadores del SDK. No lanza excepciones para evitar problemas en el flujo de destrucción.
 
 ### function get_dxl_comm_result
 
@@ -74,14 +77,13 @@ Garantiza una desconexión segura:
 int get_dxl_comm_result()
 ```
 
-Obtiene el resultado de la última operación de comunicación. 
+Obtiene el resultado de la última operación de comunicación.
 
-**See**: dynamixel::CommErrorCode 
+**See**: `dynamixel::CommErrorCode`
 
-**Return**: int
-
+**Return**: `int`
 * `COMM_SUCCESS` (0) si la operación fue exitosa.
-* Código de error específico de Dynamixel en caso de fallo. 
+* Código de error específico de Dynamixel en caso de fallo.
 
 ### function get_dxl_error
 
@@ -89,9 +91,9 @@ Obtiene el resultado de la última operación de comunicación.
 uint8_t get_dxl_error()
 ```
 
-Obtiene el último error reportado por un motor Dynamixel. 
+Obtiene el último error reportado por un motor Dynamixel.
 
-**Return**: uint8_t Byte de error (consultar manual Dynamixel para bits de error). 
+**Return**: `uint8_t` Byte de error (consultar el manual de Dynamixel para los bits de error específicos).
 
 ### function isConnect
 
@@ -99,13 +101,11 @@ Obtiene el último error reportado por un motor Dynamixel.
 bool isConnect()
 ```
 
-Verifica el estado de la conexión con el puerto serial. 
+Verifica el estado de la conexión con el puerto serial.
 
-**Return**: 
-
-  * true Si el puerto está abierto y operativo. 
-  * false Si no hay conexion o hay un error de conexión. 
-
+**Return**:
+* `true`: Si el puerto está abierto y operativo.
+* `false`: Si no hay conexión o hay un error de conexión.
 
 ### function get_baudrate
 
@@ -113,9 +113,9 @@ Verifica el estado de la conexión con el puerto serial.
 int get_baudrate()
 ```
 
-Da el valor de baudrate con el que se configuro el objeto. 
+Da el valor de baudrate con el que se configuró el objeto.
 
-**Return**: valor entero del baudrate. 
+**Return**: Valor entero del baudrate.
 
 ### function get_port
 
@@ -123,9 +123,9 @@ Da el valor de baudrate con el que se configuro el objeto.
 std::string get_port()
 ```
 
-Proporciona el nombre del puerto que se utilizado por el objeto. 
+Proporciona el nombre del puerto utilizado por el objeto.
 
-**Return**: cadena con el dispositivo. 
+**Return**: Cadena de texto con el identificador del dispositivo (puerto).
 
 ### function getPortHandler
 
@@ -133,11 +133,11 @@ Proporciona el nombre del puerto que se utilizado por el objeto.
 dynamixel::PortHandler * getPortHandler()
 ```
 
-Obtiene el manejador del puerto serial (para operaciones avanzadas). 
+Obtiene el manejador del puerto serial (para operaciones avanzadas).
 
-**Return**: Puntero a dynamixel::PortHandler. 
+**Return**: Puntero a `dynamixel::PortHandler`.
 
-**Warning**: Modificar este objeto puede afectar la conexión. 
+**Warning**: Modificar directamente este objeto puede afectar la estabilidad de la conexión.
 
 ### function getPacketHandler
 
@@ -145,9 +145,9 @@ Obtiene el manejador del puerto serial (para operaciones avanzadas).
 dynamixel::PacketHandler * getPacketHandler()
 ```
 
-Obtiene el manejador de paquetes (para comunicación low-level). 
+Obtiene el manejador de paquetes (para comunicación low-level).
 
-**Return**: Puntero a dynamixel::PacketHandler. 
+**Return**: Puntero a `dynamixel::PacketHandler`.
 
 ### function connect
 
@@ -155,22 +155,19 @@ Obtiene el manejador de paquetes (para comunicación low-level).
 int connect()
 ```
 
-Establece conexión con el puerto serial configurado en el constructor. 
+Establece conexión con el puerto serial configurado en el constructor.
 
-**Exceptions**: 
+**Exceptions**:
+* **std::runtime_error**: Si el puerto no existe o está en uso.
 
-  * **std::runtime_error** Si el puerto no existe o está en uso. 
+**Return**: `int`
+* `0` (`COMM_SUCCESS`): Si la conexión fue exitosa.
+* `-1`: Si falla al abrir el puerto.
+* `-2`: Si falla al establecer el baud rate de comunicación.
 
+**Note**: Realiza un handshake inicial con los motores.
 
-**Return**: int
-
-* `0` (COMM_SUCCESS) si la conexión fue exitosa.
-* -1 si falla al abrir el puerto.
-* -2 si falla al establecer el baud rate de comunicacion. 
-
-**Note**: Realiza un handshake inicial con los motores. 
-
-**Warning**: No es thread-safe. Si se llama desde múltiples hilos, usar mutex. 
+**Warning**: No es thread-safe. Si se llama desde múltiples hilos, implementar control por mutex.
 
 ### function disconnect
 
@@ -178,9 +175,9 @@ Establece conexión con el puerto serial configurado en el constructor.
 void disconnect()
 ```
 
-Cierra la conexión serial y libera recursos. 
+Cierra la conexión serial y libera recursos.
 
-**Warning**: No se pueden enviar comandos después de llamar a este método. 
+**Warning**: No se pueden enviar comandos tras llamar a este método.
 
 ### function pingServo
 
@@ -190,18 +187,14 @@ bool pingServo(
 )
 ```
 
-Verifica si un servo Dynamixel específico está conectado y respondiendo. 
+Verifica si un servo Dynamixel específico está conectado y respondiendo.
 
-**Parameters**: 
+**Parameters**:
+* **idServo**: ID del servo (1-254 para protocolo 1.0, 0-253 para protocolo 2.0).
 
-  * **idServo** ID del servo (0-253 para protocolo 2.0, 1-254 para 1.0). 
-
-
-**Return**: 
-
-  * true Si el servo responde al ping. 
-  * false Si hay timeout o error de comunicación (consultar dxl_comm_result para mas detalle). 
-
+**Return**:
+* `true`: Si el servo responde al ping.
+* `false`: Si hay timeout o error de comunicación (consultar `dxl_comm_result` para más detalle).
 
 ### function write1byte
 
@@ -213,22 +206,18 @@ bool write1byte(
 )
 ```
 
-Escribe 1 byte (8 bits) en la memoria del servo. 
+Escribe 1 byte (8 bits) en la memoria del servo.
 
-**Parameters**: 
+**Parameters**:
+* **idServo**: ID del servo destino.
+* **address**: Dirección de memoria (ej: 64 para "Torque Enable").
+* **value**: Valor a escribir (0-255).
 
-  * **idServo** ID del servo destino. 
-  * **address** Dirección de memoria (ej: 64 para "Torque Enable"). 
-  * **value** Valor a escribir (0-255). 
+**See**: Control Table del servo en el manual de Dynamixel.
 
-
-**See**: Control Table del servo (manual Dynamixel). 
-
-**Return**: 
-
-  * true Si la escritura fue confirmada por el servo. 
-  * false Si hubo error de comunicación o el servo rechazó el valor (consultar dxl_comm_result para mas detalle). 
-
+**Return**:
+* `true`: Si la escritura fue confirmada por el servo.
+* `false`: Si hubo error de comunicación o el servo rechazó el valor (consultar `dxl_comm_result` para más detalle).
 
 ### function write2byte
 
@@ -240,16 +229,14 @@ bool write2byte(
 )
 ```
 
-Escribe 2 bytes (16 bits) en la memoria del servo. 
+Escribe 2 bytes (16 bits) en la memoria del servo.
 
-**Parameters**: 
+**Parameters**:
+* **idServo**: ID del servo destino.
+* **address**: Dirección de memoria (ej: 30 para "Goal Position" en serie AX).
+* **value**: Valor a escribir (0-65535).
 
-  * **idServo** ID del servo destino. 
-  * **address** Dirección de memoria (ej: 116 para "Goal Position" en AX-12A). 
-  * **value** Valor a escribir (0-65535). 
-
-
-**Return**: bool 
+**Return**: `bool` `true` si la escritura fue exitosa, `false` en caso contrario.
 
 ### function writeMultiple
 
@@ -262,17 +249,15 @@ bool writeMultiple(
 )
 ```
 
-Escribe 2 bytes (16 bits) en la memoria del servo. 
+Escribe datos de forma múltiple/sincrónica en la memoria de varios servos.
 
-**Parameters**: 
+**Parameters**:
+* **ids**: Lista de IDs de los motores a los cuales escribir.
+* **address**: Dirección de memoria objetivo.
+* **data_length**: Longitud de los datos en bytes (para protocolo 1 únicamente puede ser 1 o 2).
+* **values**: Matriz con los valores en bytes correspondientes para cada motor.
 
-  * **ids** IDs de los motores a los que se les esc 
-  * **address** Direcciones de memoria para cada motor 
-  * **data_length** longitud de los datos numero entero en bytes, como es protocolo 1 unicamente puede ser 1 o 2. 
-  * **values** Valores a escribir 
-
-
-**Return**: bool 
+**Return**: `bool` `true` si la instrucción fue transmitida correctamente.
 
 ### function read1byte
 
@@ -283,17 +268,13 @@ int read1byte(
 )
 ```
 
-Lee 1 byte (8 bits) de la memoria del servo. 
+Lee 1 byte (8 bits) de la memoria del servo.
 
-**Parameters**: 
+**Parameters**:
+* **idServo**: ID del servo a consultar.
+* **address**: Dirección de memoria (ej: 43 para "Present Voltage").
 
-  * **idServo** ID del servo a consultar. 
-  * **address** Dirección de memoria (ej: 63 para "Present Load"). 
-
-
-**Return**: int Valor leído (0-255) o -1 si hubo error. 
-
-**Warning**: El valor -1 puede indicar error y -2 si no hay conexion. 
+**Return**: `int` Valor leído (0-255), `-1` si hubo un error de comunicación o `-2` si no hay conexión activa.
 
 ### function read2byte
 
@@ -304,15 +285,13 @@ int read2byte(
 )
 ```
 
-Lee 2 bytes (16 bits) de la memoria del servo. 
+Lee 2 bytes (16 bits) de la memoria del servo.
 
-**Parameters**: 
+**Parameters**:
+* **idServo**: ID del servo a consultar.
+* **address**: Dirección de memoria (ej: 36 para "Present Position").
 
-  * **idServo** ID del servo a consultar. 
-  * **address** Dirección de memoria (ej: 126 para "Present Position"). 
-
-
-**Return**: int Valor leído (0-65535), -2 si no hay conexion y -1 si hubo error. 
+**Return**: `int` Valor leído (0-65535), `-1` si hubo un error de comunicación o `-2` si no hay conexión activa.
 
 ### function readMultiple
 
@@ -324,17 +303,15 @@ std::map< uint8_t, std::vector< uint8_t > > readMultiple(
 )
 ```
 
-Escribe 2 bytes (16 bits) en la memoria del servo. 
+Lee datos de la memoria de múltiples servos en una sola consulta.
 
-**Parameters**: 
+**Parameters**:
+* **ids**: Lista de IDs a los cuales se les leerán los datos.
+* **address**: Dirección de memoria inicial.
+* **data_length**: Longitud de los datos a leer en bytes (para protocolo 1 únicamente puede ser 1 o 2).
 
-  * **ids** lista de ids a los cuales se leeran los datos. 
-  * **address** Dirección de memoria (ej: 116 para "Goal Position" en AX-12A). 
-  * **data_length** longitud de los datos numero entero en bytes, como es protocolo 1 unicamente puede ser 1 o 2. 
-
-
-**Return**: map con los datos obtenidos la ID es la key. 
+**Return**: `std::map<uint8_t, std::vector<uint8_t>>` Mapa donde la clave es el ID del servo y el valor es el vector de bytes leídos.
 
 -------------------------------
 
-Updated on 2026-09-29 at 16:14:57 -0600
+Updated on 2026-10-01 at 16:15:00 -0600
