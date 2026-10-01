@@ -1,11 +1,12 @@
-
-   ---
+---
 title: "DynamixelAXControl.h"
 linkTitle: "DynamixelAXControl.h"
 summary: "Header de la clase DynamixelAXControl."
 description: "Header de la clase DynamixelAXControl."
 weight: 10
 ---
+
+# DynamixelAXControl.h
 
 ## Classes
 
@@ -23,6 +24,7 @@ weight: 10
 
 #include <string>
 #include "DynamixelManagerP1.h"
+
 
 class DynamixelAXControl{
     
