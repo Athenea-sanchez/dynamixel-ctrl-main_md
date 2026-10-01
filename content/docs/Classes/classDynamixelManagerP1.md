@@ -9,7 +9,8 @@ weight: 10
 # DynamixelManagerP1
 
 ```cpp
-#include <DynamixelManagerP1.h>```
+`#include <DynamixelManagerP1.h>`
+```
 
 ## Public Functions
 
