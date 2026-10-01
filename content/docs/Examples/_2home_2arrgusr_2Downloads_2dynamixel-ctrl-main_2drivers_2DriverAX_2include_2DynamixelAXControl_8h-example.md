@@ -1,22 +1,30 @@
 ---
-title: /home/arrgusr/Downloads/dynamixel-ctrl-main/drivers/DriverAX/include/DynamixelAXControl.h
-summary: Constructor que asocia el controlador a un motor específico. 
+title: "DynamixelAXControl.h"
+linkTitle: "DynamixelAXControl.h"
+summary: "Header de la clase DynamixelAXControl para control de motores Dynamixel de la serie AX."
+description: "Header de la clase DynamixelAXControl para control de motores Dynamixel de la serie AX."
+weight: 10
+---
+
+# DynamixelAXControl.h
+
+Constructor que asocia el controlador a un motor específico.
+
+```cpp
+DynamixelManager manager("/dev/ttyUSB0", 57600, 1.0);
+DynamixelAXControl ax_controller(&manager, 1); // Controla motor con ID=1
+```
 
 ---
 
-# /home/arrgusr/Downloads/dynamixel-ctrl-main/drivers/DriverAX/include/DynamixelAXControl.h
+## Source code
 
-
-
-Constructor que asocia el controlador a un motor específico. [DynamixelManager](Classes/classDynamixelManager.md) manager("/dev/ttyUSB0", 57600, 1.0); [DynamixelAXControl](Classes/classDynamixelAXControl.md) ax_controller(&manager, 1); // Controla motor con ID=1 ```cpp
-
-
+```cpp
 #ifndef DYNAMIXEL_CONTROL
 #define DYNAMIXEL_CONTROL
 
 #include <string>
 #include "DynamixelManagerP1.h"
-
 
 class DynamixelAXControl{
     
@@ -100,8 +108,6 @@ class DynamixelAXControl{
 #endif
 ```
 
-_Filename: /home/arrgusr/Downloads/dynamixel-ctrl-main/drivers/DriverAX/include/DynamixelAXControl.h_
-
 -------------------------------
 
-Updated on 2026-09-29 at 16:14:57 -0600
+Updated on 2026-10-01 at 16:15:00 -0600
