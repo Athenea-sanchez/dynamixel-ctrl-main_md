@@ -3,7 +3,6 @@ title: "Documentación Dynamixel"
 description: "Documentación técnica del control de motores Dynamixel"
 ---
 
-# Documentación Técnica Dynamixel
 
 Bienvenido a la documentación del proyecto **Dynamixel Control**.
 
