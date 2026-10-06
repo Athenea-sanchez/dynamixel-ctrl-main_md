@@ -6,7 +6,7 @@ description: "Gestiona la comunicación con motores Dynamixel (protocolo 1.0)."
 weight: 10
 ---
 
-# DynamixelManager
+
 
 Gestiona la comunicación con motores Dynamixel (protocolos 1.0). [More...](#detailed-description)
 
