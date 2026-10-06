@@ -6,7 +6,6 @@ description: "Manejador principal de puerto serial y protocolo 1.0 para motores 
 weight: 10
 ---
 
-# DynamixelManagerP1
 
 ```cpp
 #include <DynamixelManagerP1.h>
