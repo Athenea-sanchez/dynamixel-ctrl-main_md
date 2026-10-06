@@ -6,7 +6,6 @@ description: "Header de la clase DynamixelAXControl para control de motores Dyna
 weight: 10
 ---
 
-# DynamixelAXControl.h
 
 Constructor que asocia el controlador a un motor específico.
 
